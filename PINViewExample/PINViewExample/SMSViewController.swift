@@ -9,10 +9,11 @@
 import UIKit
 
 class SMSViewController: UIViewController {
-
+    @IBOutlet weak var smsView: SMSView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        smsView.configure(with: 4)
         // Do any additional setup after loading the view.
     }
     

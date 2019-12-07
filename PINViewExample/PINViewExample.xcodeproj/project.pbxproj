@@ -8,20 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		B2BA6001239B993A00731014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BA6000239B993A00731014 /* AppDelegate.swift */; };
-		B2BA6003239B993A00731014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BA6002239B993A00731014 /* SceneDelegate.swift */; };
 		B2BA6005239B993A00731014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BA6004239B993A00731014 /* ViewController.swift */; };
 		B2BA6008239B993A00731014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BA6006239B993A00731014 /* Main.storyboard */; };
 		B2BA600A239B993B00731014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BA6009239B993B00731014 /* Assets.xcassets */; };
 		B2BA600D239B993B00731014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BA600B239B993B00731014 /* LaunchScreen.storyboard */; };
 		B2BA6015239BB64800731014 /* SMSStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BA6014239BB64800731014 /* SMSStoryboard.storyboard */; };
 		B2BA6017239BB67300731014 /* SMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BA6016239BB67300731014 /* SMSViewController.swift */; };
-		B2BA6019239BB77500731014 /* SMSView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BA6018239BB77500731014 /* SMSView.xib */; };
+		B2BA601B239BB7DB00731014 /* SMSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BA601A239BB7DB00731014 /* SMSView.swift */; };
+		B2BA601D239BC0CE00731014 /* SMSView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BA601C239BC0CE00731014 /* SMSView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B2BA5FFD239B993A00731014 /* PINViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PINViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA6000239B993A00731014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2BA6002239B993A00731014 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B2BA6004239B993A00731014 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B2BA6007239B993A00731014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2BA6009239B993B00731014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,7 +28,8 @@
 		B2BA600E239B993B00731014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2BA6014239BB64800731014 /* SMSStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SMSStoryboard.storyboard; sourceTree = "<group>"; };
 		B2BA6016239BB67300731014 /* SMSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSViewController.swift; sourceTree = "<group>"; };
-		B2BA6018239BB77500731014 /* SMSView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SMSView.xib; sourceTree = "<group>"; };
+		B2BA601A239BB7DB00731014 /* SMSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSView.swift; sourceTree = "<group>"; };
+		B2BA601C239BC0CE00731014 /* SMSView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SMSView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				B2BA6000239B993A00731014 /* AppDelegate.swift */,
-				B2BA6002239B993A00731014 /* SceneDelegate.swift */,
 				B2BA6004239B993A00731014 /* ViewController.swift */,
 				B2BA6016239BB67300731014 /* SMSViewController.swift */,
-				B2BA6018239BB77500731014 /* SMSView.xib */,
+				B2BA601A239BB7DB00731014 /* SMSView.swift */,
+				B2BA601C239BC0CE00731014 /* SMSView.xib */,
 				B2BA6006239B993A00731014 /* Main.storyboard */,
 				B2BA6014239BB64800731014 /* SMSStoryboard.storyboard */,
 				B2BA6009239B993B00731014 /* Assets.xcassets */,
@@ -135,7 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2BA600D239B993B00731014 /* LaunchScreen.storyboard in Resources */,
-				B2BA6019239BB77500731014 /* SMSView.xib in Resources */,
+				B2BA601D239BC0CE00731014 /* SMSView.xib in Resources */,
 				B2BA600A239B993B00731014 /* Assets.xcassets in Resources */,
 				B2BA6008239B993A00731014 /* Main.storyboard in Resources */,
 				B2BA6015239BB64800731014 /* SMSStoryboard.storyboard in Resources */,
@@ -152,7 +152,7 @@
 				B2BA6017239BB67300731014 /* SMSViewController.swift in Sources */,
 				B2BA6005239B993A00731014 /* ViewController.swift in Sources */,
 				B2BA6001239B993A00731014 /* AppDelegate.swift in Sources */,
-				B2BA6003239B993A00731014 /* SceneDelegate.swift in Sources */,
+				B2BA601B239BB7DB00731014 /* SMSView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -282,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -297,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8M5XC3X994;
 				INFOPLIST_FILE = PINViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8M5XC3X994;
 				INFOPLIST_FILE = PINViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

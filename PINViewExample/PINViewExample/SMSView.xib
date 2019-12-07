@@ -7,15 +7,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SMSView" customModule="PINViewExample" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Qhw-QP-25M"/>
+                <outlet property="stack" destination="ZQ3-fM-okH" id="XaX-sk-bRc"/>
+                <outlet property="virtualTextField" destination="8JE-Ld-uSD" id="UXt-gM-gWD"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="502" height="280"/>
+            <rect key="frame" x="0.0" y="0.0" width="631" height="258"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ3-fM-okH">
+                    <rect key="frame" x="0.0" y="44" width="631" height="180"/>
+                </stackView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8JE-Ld-uSD">
+                    <rect key="frame" x="0.0" y="0.0" width="631" height="224"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZQ3-fM-okH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Eb2-zq-dHL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ZQ3-fM-okH" secondAttribute="bottom" id="PEu-CO-YEe"/>
+                <constraint firstAttribute="trailing" secondItem="8JE-Ld-uSD" secondAttribute="trailing" id="Qma-Kq-tET"/>
+                <constraint firstItem="ZQ3-fM-okH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="aAi-af-T0O"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8JE-Ld-uSD" secondAttribute="bottom" id="aKn-iQ-f0V"/>
+                <constraint firstItem="8JE-Ld-uSD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="guL-X4-uOc"/>
+                <constraint firstItem="ZQ3-fM-okH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="oAk-lE-ElA"/>
+                <constraint firstItem="8JE-Ld-uSD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rT3-dT-pDF"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="213.04347826086959" y="4.0178571428571423"/>
+            <point key="canvasLocation" x="289.13043478260875" y="195.53571428571428"/>
         </view>
     </objects>
 </document>

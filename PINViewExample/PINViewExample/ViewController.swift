@@ -11,14 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var upperStackView: UIStackView!
     @IBOutlet weak var lowerStackView: UIStackView!
-    let disit = 4
+    let digit = 4
     var number = [Int]()
     var inputIndicators = [UILabel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        for _ in 1...disit {
+        for _ in 1...digit {
             let indicator = UILabel.circle
             inputIndicators.append(indicator)
             upperStackView.addArrangedSubview(indicator)
@@ -47,11 +47,19 @@ class ViewController: UIViewController {
         guard let pad = sender.view as? NumPadLikeUILabel else {
             return
         }
-        if number.count >= disit {
+        if number.count >= digit {
             return
         }
+        
         number.append(pad.number)
         syncViewAndNum()
+        
+        if number.count == digit {
+            guard let nextVC = UIStoryboard.init(name: "SMSStoryboard", bundle: nil).instantiateInitialViewController() else {
+                return
+            }
+            present(nextVC, animated: true, completion: nil)
+        }
     }
     
     @objc func deleteDidTapped() {
